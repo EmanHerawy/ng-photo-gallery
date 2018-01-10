@@ -1,0 +1,30 @@
+<div>
+    <ul [ngStyle]="{'width':width+'px'}">
+        <li><a href="#" (click)=onDrawImage($event)><i class="fa fa-picture-o" aria-hidden="true"></i>
+</a></li>
+        <li><a href="#" (click)=onEraseDraw($event)><i class="fa fa-eraser" aria-hidden="true"></i>
+
+</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"> <i class="fa fa-font" aria-hidden="true"></i></a>
+            <div class="dropdown-content" *ngFor="let item of font">
+                <a href="#" (click)=onSelectFont(item)>{{item}}</a>
+
+            </div>
+        </li>
+          <li><a (click)=onClearDraw($event)><i class="fa fa-trash" aria-hidden="true"></i>
+
+
+</a></li>
+        <!--<li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>-->
+    </ul>
+    <canvas #canvas></canvas>
+    <img [src]="imgageSrc" *ngIf="imgageSrc"/>
+</div>

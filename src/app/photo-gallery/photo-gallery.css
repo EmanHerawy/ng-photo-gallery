@@ -1,0 +1,29 @@
+
+#lens {
+  /*set the size of the lens:*/
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.mySlides {
+  display: inline-block;
+
+}
+img{
+  height:150px;
+  width:150px;
+}

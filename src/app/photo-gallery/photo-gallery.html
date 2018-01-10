@@ -1,0 +1,50 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-4 col-sm-4  ">
+            <div class="fileinput  text-center">
+
+              <div>
+
+                <input type="file" name="..." (change)="onUploadPic($event.target)" />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <canvas #pic></canvas>
+
+
+          </div>
+          <div class="col-md-2 pull-right img-zoom-container">
+            <canvas #lens id="lens"></canvas>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mySlides">
+          <div class="row">
+            <div class=" column thumbnail " *ngFor="let item of picList">
+              <img [src]="item" width="100%" (click)="onImageSelect(item)">
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
