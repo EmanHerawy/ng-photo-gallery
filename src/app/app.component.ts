@@ -8,7 +8,7 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Draw Board App';
+  title = ' Photo Gallery App';
 
   ngOnInit(): void {  }
 
