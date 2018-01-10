@@ -1,7 +1,7 @@
 # ng-photo-gallery
 angular 4 directive to display photo gallery and zoom when the user moves over the image  
 
-# DrawBoardApp
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
